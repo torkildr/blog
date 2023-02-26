@@ -9,6 +9,9 @@ plugins:
   - jekyll-paginate
   - jekyll-sitemap
 
+exclude:
+  - "*.sh"
+
 permalink: /:year/:month/:day/:title/
 paginate_path: /posts/:num/
 paginate: 10
