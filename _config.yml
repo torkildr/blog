@@ -8,12 +8,13 @@ plugins:
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-analytics
 
 exclude:
   - "*.sh"
 
 permalink: /:year/:month/:day/:title/
-paginate_path: /posts/:num/
+paginate_path: /blog/:num/
 paginate: 10
 
 jekyll-archives:
@@ -24,3 +25,9 @@ jekyll-archives:
   permalinks:
     category: /categories/:name/
     tag: /tags/:name/
+
+jekyll_analytics:
+    Plausible:
+      domain: 'torkildr.no'
+      source: 'https://analytics.torkildr.no/js/script.js'
+
