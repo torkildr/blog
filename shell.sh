@@ -1,5 +1,5 @@
-export JEKYLL_VERSION=4
-docker run --rm \
-  --volume="$PWD:/srv/jekyll:Z" \
-  -it jekyll/jekyll:$JEKYLL_VERSION \
-  /bin/bash
+podman run --rm \
+  --volume="$PWD:/srv/jekyll:U,Z" \
+  --workdir="/srv/jekyll" \
+  -it \
+  jekyll-builder
