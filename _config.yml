@@ -8,7 +8,7 @@ plugins:
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-analytics
+  #  - jekyll-analytics
 
 exclude:
   - "*.sh"
@@ -26,8 +26,12 @@ jekyll-archives:
     category: /categories/:name/
     tag: /tags/:name/
 
-jekyll_analytics:
-    Plausible:
-      domain: 'torkildr.no'
-      source: 'https://analytics.torkildr.no/js/script.js'
+#jekyll_analytics:
+    #    Plausible:
+    #  domain: 'torkildr.no'
+    #  source: 'https://analytics.torkildr.no/js/script.js'
+analytics:
+  plausible:
+    id: torkildr.no
+    domain: analytics.torkildr.no
 

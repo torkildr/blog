@@ -7,7 +7,7 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 4.3.2"
+gem "jekyll", "~> 4.4"
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima", "~> 2.5"
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
@@ -15,8 +15,10 @@ gem "minima", "~> 2.5"
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.12"
-  gem "jekyll-analytics", "~> 0.1", git: 'https://github.com/hendrikschneider/jekyll-analytics', ref: '40e09570dea80e3a9ecb0ad796aad1c434ff067c' # https://github.com/hendrikschneider/jekyll-analytics
+  gem "jekyll-feed", "~> 0.17"
+    # Lock sass-converter to avoid Dart Sass 3.0 deprecation warnings
+  gem "jekyll-sass-converter", "~> 2.2"
+  gem "sass-embedded", "~> 1.69"  # Last stable before deprecations enforced
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
